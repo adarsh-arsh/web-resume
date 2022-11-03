@@ -48,7 +48,11 @@ function Header() {
           
           <div className="pic">
           <div className="pic2"><img src={pic}></img></div>
+<<<<<<< HEAD
             
+=======
+           
+>>>>>>> e4fa71ac6070ac80008e1c767c9bedd9d306f728
             
           </div>
           
