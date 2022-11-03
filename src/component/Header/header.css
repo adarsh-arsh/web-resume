@@ -1,250 +1,251 @@
 .header {
-    width: 100%;
-    height: 95vh;
+  width: 100%;
+  height: 95vh;
+  background-color: white;
+  z-index: -1;
   
-  }
-  
-  .header .navbar {
-    
-    display: flex;
-    justify-content: center;
-    /*align-items: flex-start;*/
-    padding-top: 10px;
-    padding-right: 20px;
-  
-    overflow: hidden;
-    position: sticky;
-  
-    top: 0;
-    font-size: 30px;
-    font-family: cursive;
-    font-weight: bold;
-    display: flex;
-    z-index: 1;
-   
-  
-    padding-bottom: 10px;
-    background-color: white;
-  }
-  
-  .header .navbar .links {
-    max-height: 80px;
-  }
-  .header .navbar .links a {font-size: 20px;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: center;
+  /*align-items: flex-start;*/
+  padding-top: 10px;
+  padding-right: 20px;
+
+  overflow: hidden;
+  position: sticky;
+
+  top: 0;
+  font-size: 30px;
+  font-family: cursive;
+  font-weight: bold;
+  display: flex;
+  z-index: 1;
+
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.header .navbar .links {
+  max-height: 80px;
+}
+.header .navbar .links a {
+  font-size: 20px;
   margin-left: 20px;
   padding-left: 10%;
   padding-right: 10%;
-  }
+}
+
+a {
+  text-decoration: none;
+
+  font-size: 20px;
+  margin-left: 20px;
+  color: rgba(43, 43, 94, 0.815);
+}
+.header .navbar .links a:hover {
+  text-shadow: 6px 6px 8px black;
+}
+.header .second {
+  display: flex;
   
-  a {
-    text-decoration: none;
-  
-    font-size: 20px;
-    margin-left: 20px;
-    color: rgba(43, 43, 94, 0.815);
+}
+.header .second .name {
+  flex: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+.header .second .name h1 {
+  font-size: 40px;
+}
+.header .second .name h2 {
+  font-size: 50px;
+}
+.header .second .name h3 {
+  font-size: 20px;
+}
+
+.header .second .pic {
+  flex: 40%;
+}
+.header .navbar button {
+  display: none;
+  margin-left: 0;
+}
+.header .navbar #hidden {
+  display: flex;
+  margin-left: 0;
+  justify-items: flex-end;
+}
+
+@media only screen and (max-width: 950px) {
+  .header .navbar .links a {
+    font-size: 12px;
   }
-  .header .navbar .links a:hover {
-    text-shadow: 6px 6px 8px black;
+  .header .second .name h1 {
+    font-size: 30px;
   }
-  .header .second {
-   display: flex;
-   
-  
-  }
-  .header .second .name {
-    flex:50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5%;
-  }
-  .header .second .name h1{
+  .header .second .name h2 {
     font-size: 40px;
   }
-  .header .second .name h2{
-    font-size: 50px;
+  .header .second .name h3 {
+    font-size: 15px;
   }
-  .header .second .name h3{
-    font-size: 20px;
+
+  .header{
+    height: max-content;
   }
-  
-  .header .second .pic{
-    flex: 50%;
-    
+  .header .pic img{
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .header{
+    height: max-content;
+    width:auto;
   }
   .header .navbar button {
-    display: none;
-    margin-left: 0;
-  }
-  .header .navbar #hidden {
     display: flex;
-    margin-left: 0;
+  }
+
+  .header .navbar .links {
+    display: none;
+  }
+
+  .header .navbar #hidden {
+    position: relative;
+    left: 0px;
+    top: 80px;
+    height: 250px;
+    max-height: 250px;
+    width: 100%;
+    background-color: #021e39;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+  }
+
+  .header .navbar #hidden a {
+    margin: 18px;
     justify-items: flex-end;
   }
-  
-  
-  @media only screen and (max-width: 950px) {
-    .header .navbar .links a {
-      font-size: 12px;
-    }
-    .header .second .name h1{
-      font-size: 30px;
-    }
-    .header .second .name h2{
-      font-size: 40px;
-    }
-    .header .second .name h3{
-      font-size: 15px;
-    }
- 
-  .header {
-    width: 100%;
-    height: 60vh;
-  
+  .header .second .name h1 {
+    font-size: 20px;
+  }
+  .header .second .name h2 {
+    font-size: 30px;
+  }
+  .header .second .name h3 {
+    font-size: 10px;
+  }
+  .header .pic img{
+    height: 200px;
   }
   
 }
-  @media only screen and (max-width: 750px) {
-    .header {
-      width: 100%;
-      height: 50vh;
-    
-    }
-    .header .navbar button {
-      display: flex;
-    }
-  
-    .header .navbar .links {
-      display: none;
-    }
-  
-    .header .navbar #hidden {
-      position: relative;
-      left: 0px;
-      top: 80px;
-      height: 250px;
-      max-height: 250px;
-      width: 100%;
-      background-color: #021e39;
-      display: flex;
-      flex-direction: column;
-      align-items: right;
-    }
-  
-    .header .navbar #hidden a {
-      margin: 18px;
-      justify-items: flex-end;
-    }
-    .header .second .name h1{
-      font-size: 20px;
-    }
-    .header .second .name h2{
-      font-size: 30px;
-    }
-    .header .second .name h3{
-      font-size: 10px;
-    }
-    
+.pic2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 400px;
+  bottom: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  background-color: transparent;
+}
+.wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.box div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.box div img {
+  height: 100px;
+  width: 100px;
+  opacity: 0.7;
+}
+.box div:nth-child(1) {
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(2) {
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+.box div:nth-child(3) {
+  top: 17%;
+  left: 1%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(4) {
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.box div:nth-child(7) {
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+.box div:nth-child(8) {
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(9) {
+  top: 70%;
+  left: 5%;
+  animation: animate 13s linear infinite;
+}
+.box div:nth-child(10) {
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+.box div:nth-child(11) {
+  top: 32%;
+  left: 52%;
+  animation: animate 8s linear infinite;
+}
+.box div:nth-child(12) {
+  top: 45%;
+  left: 40%;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(-90px) rotate(360deg);
+    opacity: 0.7;
   }
-  .pic2{
-    position: absolute;
-    top:0px;
-    right:0px;
-    left:400px;
-    bottom: 100px;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
-    background-color: transparent;
+  100% {
+    transform: scale(1.5) translateY(-90px) rotate(-180deg);
+
+    opacity: 0;
   }
-  .wrapper {
-    position: absolute;
-    top:0px;
-    left:0px;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-  }
-  .box div {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-  }
-  .box div img{
-    height: 100px;
-    width: 100px;
-  }
-  .box div:nth-child(1) {
-    top: 12%;
-    left: 42%;
-    animation: animate 10s linear infinite;
-  }
-  .box div:nth-child(2) {
-    top: 70%;
-    left: 50%;
-    animation: animate 7s linear infinite;
-  }
-  .box div:nth-child(3) {
-    top: 17%;
-    left: 1%;
-    animation: animate 9s linear infinite;
-  }
-  .box div:nth-child(4) {
-    top: 20%;
-    left: 60%;
-    animation: animate 10s linear infinite;
-  }
-  .box div:nth-child(5) {
-    top: 67%;
-    left: 10%;
-    animation: animate 6s linear infinite;
-  }
-  .box div:nth-child(6) {
-    top: 80%;
-    left: 70%;
-    animation: animate 12s linear infinite;
-  }
-  .box div:nth-child(7) {
-    top: 60%;
-    left: 80%;
-    animation: animate 15s linear infinite;
-  }
-  .box div:nth-child(8) {
-    top: 90%;
-    left: 25%;
-    animation: animate 9s linear infinite;
-  }
-  .box div:nth-child(9) {
-    top: 70%;
-    left: 5%;
-    animation: animate 13s linear infinite;
-  }
-  .box div:nth-child(10) {
-    top: 20%;
-    left: 80%;
-    animation: animate 5s linear infinite;
-  }
-  .box div:nth-child(11) {
-    top: 32%;
-    left: 52%;
-    animation: animate 8s linear infinite;
-  }
-  .box div:nth-child(12) {
-    top: 45%;
-    left: 40%;
-    animation: animate 10s linear infinite;
-  }
-  
-  @keyframes animate {
-    0% {
-      transform: scale(0) translateY(-90px) rotate(360deg);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1.5) translateY(-90px) rotate(-180deg);
-      
-      opacity: 0;
-    }
-  }
+}

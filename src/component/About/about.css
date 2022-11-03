@@ -1,43 +1,64 @@
-.container {
+.container1 {
   height: 400px;
+  margin-top: 10%;
   margin-left: 10%;
   margin-right: 10%;
+  display: flex;
 }
-.container .content {
+.container1 .content {
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
   flex-direction: column;
 }
-.container .content h2 {
+.container1 .content h2 {
   margin-left: 10%;
 }
-.container .content p {
+.container1 .content p {
   margin-left: 20%;
   margin-top: 5%;
 }
-.container .content p Button {
+.container1 .content p Button {
   width: 150px;
 }
+.container1 .image1 img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200%;
+  height: auto;
+  margin-top: 40px;
+  border-spacing: 0px;
+  border-radius: 10%;
+  background-position: left top;
+  background-color: transparent;
+}
 @media only screen and (max-width: 950px) {
-  .container .content h1 {
+  .container1 .content h1 {
     font-size: 30px;
   }
-  .container .content h2 {
+  .container1 .content h2 {
     font-size: 40px;
   }
-  .container .content p {
+  .container1 .content p {
     font-size: 15px;
+  }
+  .header{
+    height: max-content;
   }
 }
 @media only screen and (max-width: 750px) {
-  .container .content h1 {
+  .container1 .content h1 {
     font-size: 15px;
   }
-  .container .content h2 {
+  .container1 .content h2 {
     font-size: 20px;
   }
-  .container .content p {
+  .container1 .content p {
     font-size: 10px;
   }
+  .header{
+    height: max-content;
+  }
+  
 }
