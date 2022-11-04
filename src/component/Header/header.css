@@ -1,9 +1,8 @@
 .header {
   width: 100%;
   height: 95vh;
-  background-color: white;
-  z-index: -1;
-  
+
+
 }
 
 .header .navbar {
@@ -14,8 +13,8 @@
   padding-right: 20px;
 
   overflow: hidden;
-  position: sticky;
-
+  position: fixed;
+width: 100%;
   top: 0;
   font-size: 30px;
   font-family: cursive;
@@ -35,6 +34,7 @@
   margin-left: 20px;
   padding-left: 10%;
   padding-right: 10%;
+  
 }
 
 a {
@@ -49,7 +49,8 @@ a {
 }
 .header .second {
   display: flex;
-  
+  margin-top: 8%;
+  margin-right: 10%;
 }
 .header .second .name {
   flex: 60%;
@@ -68,9 +69,18 @@ a {
   font-size: 20px;
 }
 
-.header .second .pic {
-  flex: 40%;
+.header .second .pic img{
+  flex: 50%;
+  background-color: #08BDBA;
+  height: 500px;
+  width: auto;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 40%;
+  
 }
+
 .header .navbar button {
   display: none;
   margin-left: 0;
@@ -98,7 +108,7 @@ a {
   .header{
     height: max-content;
   }
-  .header .pic img{
+  .header .second .pic img{
     height: 300px;
   }
 }
@@ -109,20 +119,22 @@ a {
   }
   .header .navbar button {
     display: flex;
+    flex-direction: column-reverse;
   }
 
   .header .navbar .links {
     display: none;
+    justify-self: right;
   }
 
   .header .navbar #hidden {
     position: relative;
     left: 0px;
     top: 80px;
-    height: 250px;
-    max-height: 250px;
+    height: 400px;
+    max-height: 400px;
     width: 100%;
-    background-color: #021e39;
+    background-color: #08BDBA;
     display: flex;
     flex-direction: column;
     align-items: right;
@@ -141,7 +153,7 @@ a {
   .header .second .name h3 {
     font-size: 10px;
   }
-  .header .pic img{
+  .header .second .pic img{
     height: 200px;
   }
   
@@ -155,7 +167,7 @@ a {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: 1;
+  
   background-color: transparent;
 }
 .wrapper {
@@ -164,8 +176,9 @@ a {
   left: 0px;
   width: 100%;
   height: 100%;
+  background-color: white;
   overflow: hidden;
-  z-index: 1;
+  z-index: -1;
 }
 .box div {
   position: absolute;
@@ -241,7 +254,7 @@ a {
 @keyframes animate {
   0% {
     transform: scale(0) translateY(-90px) rotate(360deg);
-    opacity: 0.7;
+    opacity: 1;
   }
   100% {
     transform: scale(1.5) translateY(-90px) rotate(-180deg);

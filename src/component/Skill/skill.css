@@ -42,7 +42,7 @@
    margin-bottom: 2%;
 }
 .container .boxContainer :hover{
-    background-color: rgba(23, 190, 212, 1);
+    background-color: #08BDBA;
     border-radius: 5%;
    
 }

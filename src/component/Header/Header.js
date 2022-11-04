@@ -47,10 +47,11 @@ function Header() {
           </div>
           
           <div className="pic">
-          
-
+         
           
         <img src={pic} height="500px"></img>
+        
+
       </div>
 
             
@@ -98,7 +99,9 @@ function Header() {
           </div>
         </div>
       </div>
+      
     </nav>
+
   );
 }
 
